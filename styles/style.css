@@ -1,0 +1,412 @@
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/* 背景样式 */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+/* 主容器 */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 70px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 玻璃态卡片通用样式 */
+.glass-card {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* 主要内容区 */
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 左侧区域 */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Logo区域 */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.clock-icon {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+}
+
+.clock-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.3rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.55);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* 欢迎卡片 */
+.welcome-card {
+    padding: 25px 30px;
+    position: relative;
+    min-width: 380px;
+}
+
+.quote-mark {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 1;
+    font-family: Georgia, serif;
+    position: absolute;
+}
+
+.quote-mark.left {
+    top: 5px;
+    left: 10px;
+}
+
+.quote-mark.right {
+    bottom: 0px;
+    right: 15px;
+}
+
+.welcome-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    padding-left: 30px;
+}
+
+.welcome-text {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* 社交图标 */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* 右侧区域 */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 顶部信息区 */
+.top-info {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 20px;
+}
+
+/* 名言卡片 */
+.quote-card {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.quote-author {
+    font-size: 1.1rem;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 天气时钟卡片 */
+.weather-clock-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.date-text {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.time-display {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+}
+
+.weather-text {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 网站列表区域 */
+.sites-section {
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-icon {
+    width: 26px;
+    height: 26px;
+}
+
+/* 网站卡片网格 */
+.sites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.site-card {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.site-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.site-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.site-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.site-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* 页脚 */
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 18px 0;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 40px -70px -50px -70px;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .container {
+        padding: 30px;
+    }
+    
+    .footer {
+        margin: 30px -30px -30px -30px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 25px;
+    }
+    
+    .logo-text {
+        font-size: 2.2rem;
+    }
+    
+    .clock-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .top-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .sites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .welcome-card {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .footer {
+        margin: 20px -25px -25px -25px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .sites-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .site-card {
+        padding: 25px 15px;
+    }
+    
+    .footer {
+        margin: 15px -20px -20px -20px;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

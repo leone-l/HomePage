@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景图 -->
+    <div class="background">
+        <img src="assets/images/hero-bg.jpg" alt="背景" class="bg-image">
+        <div class="bg-overlay"></div>
+    </div>
+    
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 主要内容区 -->
+        <main class="main-content">
+            <!-- 左侧区域 -->
+            <div class="left-section">
+                <!-- Logo区域 -->
+                <div class="logo-section">
+                    <div class="clock-icon">
+                        <svg viewBox="0 0 100 100" class="clock-svg">
+                            <circle cx="50" cy="50" r="45" fill="#1a1a1a" stroke="#fff" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="40" fill="#2a2a2a"/>
+                            <line x1="50" y1="50" x2="50" y2="25" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="50" y1="50" x2="70" y2="50" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="50" y1="50" x2="50" y2="35" stroke="#e53935" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="50" cy="50" r="3" fill="#fff"/>
+                        </svg>
+                    </div>
+                    <h1 class="logo-text">imsyy.top</h1>
+                </div>
+                
+                <!-- 欢迎卡片 -->
+                <div class="welcome-card glass-card">
+                    <div class="quote-mark left">"</div>
+                    <p class="welcome-subtitle">Hello World!</p>
+                    <p class="welcome-text">一个建立于 21 世纪的小站，存活于互联网的边缘</p>
+                    <div class="quote-mark right">"</div>
+                </div>
+                
+                <!-- 社交图标 -->
+                <div class="social-icons">
+                    <a href="#" class="social-icon" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" title="哔哩哔哩">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v5.587c-.036 1.475-.536 2.68-1.5 3.614-.964.934-2.168 1.436-3.613 1.508h-9.334c-1.445-.072-2.655-.574-3.63-1.508-.976-.934-1.482-2.139-1.52-3.614V9.987c.038-1.511.548-2.765 1.53-3.76.98-.996 2.254-1.52 3.82-1.574h.783l-2.02-2.307a.586.586 0 0 1 .086-.816.586.586 0 0 1 .815.086l3.02 3.446h5.158l3.02-3.446a.586.586 0 0 1 .815-.086c.23.2.278.518.144.816L17.813 4.653zm-7.41 4.704a.983.983 0 0 0-.7.287c-.196.193-.293.45-.293.77v2.955c0 .32.097.58.293.77.195.19.456.286.785.286.329 0 .59-.096.786-.286.195-.19.293-.45.293-.77V10.414c0-.32-.098-.577-.293-.77-.196-.192-.457-.287-.786-.287zm5.14 0a.983.983 0 0 0-.7.287c-.196.193-.294.45-.294.77v2.955c0 .32.098.58.294.77.195.19.456.286.785.286.329 0 .59-.096.786-.286.195-.19.293-.45.293-.77V10.414c0-.32-.098-.577-.293-.77-.195-.192-.457-.287-.786-.287z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" title="QQ">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.003 2c-2.265 0-6.29 1.364-6.29 7.325v1.195S3.55 14.96 3.55 17.474c0 .665.17 1.025.28 1.025.114 0 .678-.432 1.254-1.253 0 0-.29 2.153 2.96 3.758 0 0-1.82.51-1.82 1.73 0 1.218 4.957.77 7.78.77 2.81 0 7.77.45 7.77-.77 0-1.218-1.81-1.73-1.81-1.73 3.25-1.605 2.96-3.758 2.96-3.758.57.82 1.13 1.254 1.245 1.254.11 0 .27-.36.27-1.025 0-2.514-2.16-6.954-2.16-6.954V9.325C18.29 3.364 14.265 2 12.003 2z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" title="邮件">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" title="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.025-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.348-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 右侧区域 -->
+            <div class="right-section">
+                <!-- 顶部信息区 -->
+                <div class="top-info">
+                    <!-- 名言卡片 -->
+                    <div class="quote-card glass-card">
+                        <p class="quote-text" id="dailyQuote">生命如意志永存，青春永远年轻。</p>
+                        <p class="quote-author">-「 安讯七旬 」</p>
+                    </div>
+                    
+                    <!-- 天气时钟卡片 -->
+                    <div class="weather-clock-card glass-card">
+                        <p class="date-text" id="dateText">2023 年 12 月 02 日 星期六</p>
+                        <div class="time-display" id="timeDisplay">09:25:44</div>
+                        <p class="weather-text">郑州市 晴 3℃ 东南风 ≤3 级</p>
+                    </div>
+                </div>
+                
+                <!-- 网站列表 -->
+                <div class="sites-section">
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="section-icon">
+                            <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+                        </svg>
+                        网站列表
+                    </h2>
+                    
+                    <div class="sites-grid">
+                        <a href="#" class="site-card glass-card">
+                            <div class="site-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+                                    <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                </svg>
+                            </div>
+                            <span class="site-name">博客</span>
+                        </a>
+                        
+                        <a href="#" class="site-card glass-card">
+                            <div class="site-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"/>
+                                </svg>
+                            </div>
+                            <span class="site-name">网盘</span>
+                        </a>
+                        
+                        <a href="#" class="site-card glass-card">
+                            <div class="site-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                                </svg>
+                            </div>
+                            <span class="site-name">音乐</span>
+                        </a>
+                        
+                        <a href="#" class="site-card glass-card">
+                            <div class="site-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.6 10.26c-.2-.2-.51-.2-.71 0L12 12.15l-1.89-1.89c-.2-.2-.51-.2-.71 0s-.2.51 0 .71L11.29 13l-1.89 1.89c-.2.2-.2.51 0 .71s.51.2.71 0L12 13.85l1.89 1.89c.2.2.51.2.71 0s.2-.51 0-.71L12.71 13l1.89-1.89c.2-.19.2-.51.01-.71zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/>
+                                </svg>
+                            </div>
+                            <span class="site-name">起始页</span>
+                        </a>
+                        
+                        <a href="#" class="site-card glass-card">
+                            <div class="site-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+                                </svg>
+                            </div>
+                            <span class="site-name">网址集</span>
+                        </a>
+                        
+                        <a href="#" class="site-card glass-card">
+                            <div class="site-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/>
+                                </svg>
+                            </div>
+                            <span class="site-name">今日热榜</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>Copyright © 2020 - 2023 無名 & Made by imsyy & 豫ICP备2022018134号-1</p>
+        </footer>
+    </div>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
