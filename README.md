@@ -1,6 +1,7 @@
 # 个人主页 - 玻璃态设计
 
 这是一个现代化的玻璃态（Glassmorphism）风格个人主页，基于提供的设计图片实现。
+参考https://github.com/imsyy/home
 
 ## ✨ 特性
 
